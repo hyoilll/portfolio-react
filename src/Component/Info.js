@@ -12,9 +12,17 @@ const Photo = styled("img")`
   height: 100px;
 `;
 
-const Blog = styled("div")``;
+const Blog = styled("div")`
+  :hover {
+    color: red;
+  }
+`;
 
-const Git = styled("div")``;
+const Git = styled("div")`
+  :hover {
+    color: red;
+  }
+`;
 
 const Detail = styled("div")`
   display: flex;

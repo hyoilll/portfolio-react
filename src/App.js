@@ -5,6 +5,7 @@ import Category from "./Component/Category";
 import Container from "./Component/Container";
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyle";
+import MyRouter from "./MyRouter";
 
 const Main = styled("div")`
   width: 1200px;
@@ -32,11 +33,10 @@ const App = () => {
   return (
     <Main>
       <GlobalStyles />
-      <Header></Header>
       <Page>
         <Left className="left">
           <Info></Info>
-          <Category></Category>
+          <MyRouter />
         </Left>
         <Right className="right">
           <Container></Container>
