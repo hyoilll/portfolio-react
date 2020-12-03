@@ -11,15 +11,8 @@ const Main = styled("div")`
   font-family: "Do Hyeon", sans-serif;
 `;
 
-const Left = styled("div")`
-  /* position: fixed;
-  top: 130px;
-  width: 220px; */
+const Content = styled("div")`
   font-size: 20px;
-`;
-
-const Right = styled("div")`
-  margin: 110px 0 0 220px;
 `;
 
 const Page = styled("div")`
@@ -32,13 +25,10 @@ const App = () => {
     <Main>
       <GlobalStyles />
       <Page>
-        <Left className="left">
+        <Content className="left">
           <Info></Info>
           <MyRouter />
-        </Left>
-        {/* <Right className="right">
-          <Container></Container>
-        </Right> */}
+        </Content>
       </Page>
     </Main>
   );
