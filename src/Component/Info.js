@@ -5,6 +5,9 @@ import Profile from "../photo/profile.png";
 
 const Container = styled("div")`
   padding: 20px;
+  position: fixed;
+  top: 130px;
+  width: 220px;
 `;
 
 const Photo = styled("img")`

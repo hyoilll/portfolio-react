@@ -8,6 +8,9 @@ const Container = styled("div")`
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+  position: fixed;
+  top: 350px;
+  width: 220px;
 `;
 
 const Item = styled("li")`

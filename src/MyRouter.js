@@ -9,13 +9,17 @@ import Home from "./Routes/Home";
 import About from "./Routes/About";
 import Skills from "./Routes/SKills";
 import MyWork from "./Routes/MyWork";
-import Contact from "./Routes/contact";
+import Contact from "./Routes/Contact";
 import Category from "./Component/Category";
 import Header from "./Component/Header";
 
+import styled from "styled-components";
+
+const Container = styled("div")``;
+
 const MyRouter = () => {
   return (
-    <div>
+    <Container>
       <Router>
         <Header />
         <Category />
@@ -25,10 +29,10 @@ const MyRouter = () => {
           <Route path="/Skills" exact component={Skills} />
           <Route path="/MyWork" exact component={MyWork} />
           <Route path="/Contact" exact component={Contact} />
-          <Redirect from="*" to="/" />
+          <Redirect path="*" to="/" />
         </Switch>
       </Router>
-    </div>
+    </Container>
   );
 };
 

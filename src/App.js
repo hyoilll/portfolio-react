@@ -1,8 +1,5 @@
 import React from "react";
-import Header from "./Component/Header";
 import Info from "./Component/Info";
-import Category from "./Component/Category";
-import Container from "./Component/Container";
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyle";
 import MyRouter from "./MyRouter";
@@ -11,12 +8,13 @@ const Main = styled("div")`
   width: 1200px;
   height: 1500px;
   margin: 0 auto;
+  font-family: "Do Hyeon", sans-serif;
 `;
 
 const Left = styled("div")`
-  position: fixed;
+  /* position: fixed;
   top: 130px;
-  width: 220px;
+  width: 220px; */
   font-size: 20px;
 `;
 
@@ -38,9 +36,9 @@ const App = () => {
           <Info></Info>
           <MyRouter />
         </Left>
-        <Right className="right">
+        {/* <Right className="right">
           <Container></Container>
-        </Right>
+        </Right> */}
       </Page>
     </Main>
   );
