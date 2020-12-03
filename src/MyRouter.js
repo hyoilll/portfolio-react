@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Redirect,
   Route,
   Switch,
@@ -12,7 +12,6 @@ import MyWork from "./Routes/MyWork";
 import Contact from "./Routes/Contact";
 import Category from "./Component/Category";
 import Header from "./Component/Header";
-
 import styled from "styled-components";
 
 const Container = styled("div")``;
