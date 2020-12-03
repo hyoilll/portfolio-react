@@ -22,17 +22,17 @@ const initSkills = () => {
   const skills = [];
   skills.push({
     title: "Front-end",
-    skills: "HTML, CSS, JavaScript,React, Vue, TypeScript",
+    skills: "HTML, CSS, JavaScript, React, Vue, TypeScript",
     icon: "fab fa-html5",
   });
   skills.push({
     title: "Back-end",
-    skills: "JavaScript,NodeJs, Ruby",
+    skills: "JavaScript, NodeJs, Ruby",
     icon: "fas fa-server",
   });
   skills.push({
     title: "Mobile",
-    skills: "Android, IOS, Swift,React Native, Kotlin",
+    skills: "Android, IOS, Swift, React Native, Kotlin",
     icon: "fas fa-mobile-alt",
   });
 
