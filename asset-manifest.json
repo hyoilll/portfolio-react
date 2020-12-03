@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/portfolio-react/static/js/main.2132d926.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.2132d926.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.0f5864bc.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.0f5864bc.js.map",
+    "static/js/2.91e1445e.chunk.js": "/portfolio-react/static/js/2.91e1445e.chunk.js",
+    "static/js/2.91e1445e.chunk.js.map": "/portfolio-react/static/js/2.91e1445e.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "static/js/2.91e1445e.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.91e1445e.chunk.js.LICENSE.txt",
+    "static/media/hanyang.8d6c23ea.png": "/portfolio-react/static/media/hanyang.8d6c23ea.png",
+    "static/media/hyoil.b7e8d59b.jpg": "/portfolio-react/static/media/hyoil.b7e8d59b.jpg",
+    "static/media/kia.0cebb200.png": "/portfolio-react/static/media/kia.0cebb200.png",
+    "static/media/kit.5f930044.png": "/portfolio-react/static/media/kit.5f930044.png",
+    "static/media/profile.d06bcf5a.png": "/portfolio-react/static/media/profile.d06bcf5a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f5864bc.js",
+    "static/js/2.91e1445e.chunk.js",
+    "static/js/main.2132d926.chunk.js"
+  ]
+}
