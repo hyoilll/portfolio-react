@@ -24,6 +24,7 @@ const Title = styled("h2")`
 
 const Description = styled("p")`
   font-size: 30px;
+  margin-bottom: 50px;
 `;
 
 const Home = () => {
@@ -35,6 +36,15 @@ const Home = () => {
         <br />
         【イ・ヒョイル】と申します。
       </Title>
+      <Description>
+        現在Hanyang Cyber univercity3年生になりました。
+        <br />
+        学科はコンピューター工学科に編入し、2021年8月卒業見込みです。
+        <br />
+        今はフロントエンド分野のReact、TypeScriptを勉強しておりますが、
+        <br />
+        Back-end、Mobileまで勉強していきたいと思います。
+      </Description>
       <Description>
         アプリケーション開発を目指しております。宜しくお願い致します。
       </Description>

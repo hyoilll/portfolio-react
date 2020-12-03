@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Container = styled("div")`
   margin: 60px 0;
   font-size: 30px;
+  text-align: center;
 `;
 
 const Circle = styled("div")`

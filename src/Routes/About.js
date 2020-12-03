@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Skill from "../Component/Skill";
 import History from "../Component/History";
+import Hanyang from "../photo/hanyang.png";
+import Kia from "../photo/kia.png";
+import Kit from "../photo/kit.png";
 
 const Container = styled("div")`
   margin: 150px 0 0 220px;
   width: 950px;
   height: 100%;
-  text-align: center;
 `;
 
-const Description = styled("p")`
-  font-size: 30px;
+const Skills = styled("div")`
+  margin-bottom: 150px;
 `;
+
+const Historys = styled("div")``;
 
 const initSkills = () => {
   const skills = [];
@@ -35,30 +39,59 @@ const initSkills = () => {
   return skills;
 };
 
+const initHistorys = () => {
+  const historys = [];
+
+  historys.push({
+    img: Hanyang,
+    title: "漢陽─大学校　コンピューター工学科、Hanyang Cyber univercity",
+    period: "2020年3月 ~ 2021年8月の卒業見込み",
+  });
+  historys.push({
+    img: Kia,
+    title: "起亞自動車(株)、Kia Motors",
+    period: "2017年2月 ~",
+  });
+  historys.push({
+    img: Kit,
+    title:
+      "金烏工科大学校　コンピューターソフトウェア工学科、Kumoh National Institute of Technology",
+    period: "2012年3月 ~ 2017年2月",
+  });
+
+  return historys;
+};
+
 const About = () => {
   const [skills, setSkill] = useState(initSkills);
+  const [historys, setHistory] = useState(initHistorys);
 
   return (
     <Container>
-      <Description>
-        現在Hanyang Cyber univercity3年生になりました。
-        <br />
-        学科はコンピューター工学科に編入し、2021年8月卒業見込みです。
-        <br />
-        今はフロントエンド分野のReact、TypeScriptを勉強しておりますが、
-        <br />
-        Back-end、Mobileまで勉強していきたいと思います。
-      </Description>
-      {skills.map((skill, idx) => {
-        return (
-          <Skill
-            key={idx}
-            title={skill.title}
-            skills={skill.skills}
-            icon={skill.icon}
-          ></Skill>
-        );
-      })}
+      <Skills>
+        {skills.map((skill, idx) => {
+          return (
+            <Skill
+              key={idx}
+              title={skill.title}
+              skills={skill.skills}
+              icon={skill.icon}
+            ></Skill>
+          );
+        })}
+      </Skills>
+      <Historys>
+        {historys.map((history, idx) => {
+          return (
+            <History
+              key={idx}
+              img={history.img}
+              title={history.title}
+              period={history.period}
+            ></History>
+          );
+        })}
+      </Historys>
     </Container>
   );
 };
