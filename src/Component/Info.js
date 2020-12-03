@@ -41,12 +41,20 @@ const Info = () => {
       <Photo className="profile-picture" src={Profile}></Photo>
       <Detail>
         <Blog className="blog">
-          <a href="https://blog.naver.com/dlgydlf12345" target="_blank">
+          <a
+            href="https://blog.naver.com/dlgydlf12345"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Blog
           </a>
         </Blog>
         <Git className="github">
-          <a href="https://github.com/hyoilll" target="_blank">
+          <a
+            href="https://github.com/hyoilll"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Github
           </a>
         </Git>
