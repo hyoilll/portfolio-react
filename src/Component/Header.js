@@ -40,7 +40,7 @@ const Header = () => {
 
   return (
     <Container>
-      <Logo href="/portfolio-react">Hyo il</Logo>
+      <Logo href="/">Hyo il</Logo>
       <Title>{path}</Title>
     </Container>
   );
