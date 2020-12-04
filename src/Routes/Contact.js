@@ -85,6 +85,7 @@ const Contact = () => {
           </Link>
         </Links>
         <Name className="version">- 2020 Lee Hyoil -</Name>
+        <div>후원계좌 : 신한은행 110-367-819238 이효일</div>
       </Description>
     </Container>
   );
