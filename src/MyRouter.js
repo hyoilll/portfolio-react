@@ -28,7 +28,7 @@ const MyRouter = () => {
           <Route path="/Skills" exact component={Skills} />
           <Route path="/MyWork" exact component={MyWork} />
           <Route path="/Contact" exact component={Contact} />
-          <Redirect path="*" to="/" />
+          <Redirect from="*" to="/" />
         </Switch>
       </Router>
     </Container>
