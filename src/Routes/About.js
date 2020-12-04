@@ -7,7 +7,7 @@ import Kia from "../photo/kia.png";
 import Kit from "../photo/kit.png";
 
 const Container = styled("div")`
-  margin: 150px 0 0 220px;
+  margin: 150px 0 100px 220px;
   width: 950px;
   height: 100%;
 `;

@@ -25,7 +25,6 @@ const Period = styled("div")`
 `;
 
 const History = ({ img, title, period }) => {
-  console.log(img);
   return (
     <Container>
       <Photo src={img}></Photo>

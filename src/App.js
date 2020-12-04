@@ -6,7 +6,7 @@ import MyRouter from "./MyRouter";
 
 const Main = styled("div")`
   width: 1200px;
-  height: 1800px;
+  height: 1000px;
   margin: 0 auto;
   font-family: "Do Hyeon", sans-serif;
 `;
