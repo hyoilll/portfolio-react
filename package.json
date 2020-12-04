@@ -29,7 +29,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://hyoilll.github.io/portfolio-react",
+  "homepage": "https://nervous-snyder-dda352.netlify.app",
   "browserslist": {
     "production": [
       ">0.2%",
