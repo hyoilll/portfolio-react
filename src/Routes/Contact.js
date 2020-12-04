@@ -68,7 +68,7 @@ const Contact = () => {
         <Links>
           <Link
             className="github"
-            href="https://blog.naver.com/dlgydlf12345"
+            href="https://github.com/hyoilll"
             target="_blank"
             rel="noopener noreferrer"
             style={{ marginRight: "30px" }}
@@ -77,7 +77,7 @@ const Contact = () => {
           </Link>
           <Link
             className="blog"
-            href="https://github.com/hyoilll"
+            href="https://blog.naver.com/dlgydlf12345"
             target="_blank"
             rel="noopener noreferrer"
           >
