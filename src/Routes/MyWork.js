@@ -68,7 +68,7 @@ const initJsP = () => {
   jss.push({
     name: "Web Game",
     description:
-      "Webで楽しめるゲーム（MinesweeperやTicTecTocやCard Matchingなど）を作ってました。",
+      "Webで楽しめるゲーム（MinesweeperやTicTecTocやCard Matchingなど）を作ってみました。",
     github: "https://github.com/hyoilll/web-game-javascript",
   });
 
@@ -81,13 +81,13 @@ const initHtmlCssP = () => {
   hss.push({
     name: "Kakao Talk Clone coding",
     description:
-      "韓国で多くの人が使っているメッセンジャーであるカカオトークをCloneCodingしてみました。",
+      "韓国で多くの人々が使っているメッセンジャーであるカカオトークをCloneCodingしてみました。",
     github: "https://github.com/hyoilll/kakao-clone3",
   });
   hss.push({
     name: "Naver clone coding",
     description:
-      "韓国で多くの人が使っている検索エンジンであるNaverのホームページをCloneCodingしてみました。",
+      "韓国で多くの人々が使っている検索エンジンであるNaverのホームページをCloneCodingしてみました。",
     github: "https://github.com/hyoilll/naver1",
   });
 
