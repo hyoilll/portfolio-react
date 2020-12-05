@@ -5,6 +5,7 @@ import History from "../Component/History";
 import Hanyang from "../photo/hanyang.png";
 import Kia from "../photo/kia.png";
 import Kit from "../photo/kit.png";
+import Helmet from "react-helmet";
 
 const Container = styled("div")`
   margin: 150px 0 100px 220px;
@@ -68,6 +69,9 @@ const About = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>About | Hyoil's Portfolio Site</title>
+      </Helmet>
       <Skills>
         {skills.map((skill, idx) => {
           return (

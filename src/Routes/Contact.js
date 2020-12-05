@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HyoilImg from "../photo/kakao.jpg";
+import Helmet from "react-helmet";
 
 const Container = styled("div")`
   margin: 200px 0 0 250px;
@@ -57,6 +58,9 @@ const Name = styled("div")`
 const Contact = () => {
   return (
     <Container>
+      <Helmet>
+        <title>Contact | Hyoil's Portfolio Site</title>
+      </Helmet>
       <Photo src={HyoilImg}></Photo>
       <Description>
         <Title className="title">Let's talk</Title>

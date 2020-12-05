@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProfileImg from "../photo/hyoil.jpg";
+import Helmet from "react-helmet";
 
 const Container = styled("div")`
   margin: 150px 0 0 220px;
@@ -30,6 +31,9 @@ const Description = styled("p")`
 const Home = () => {
   return (
     <Container>
+      <Helmet>
+        <title>Home | Hyoil's Portfolio Site</title>
+      </Helmet>
       <Photo src={ProfileImg}></Photo>
       <Title>
         初めまして、

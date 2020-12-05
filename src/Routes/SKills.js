@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SkillBar from "../Component/SkillBar";
 import Ide from "../Component/Ide";
 import Etc from "../Component/Etc";
+import Helmet from "react-helmet";
 
 const Container = styled("div")`
   margin: 150px 0 0 220px;
@@ -58,6 +59,7 @@ const Etcs = styled("div")`
   align-items: center;
   justify-content: center;
 `;
+
 const initSkill = () => {
   const skills = [];
 
@@ -126,6 +128,9 @@ const SKills = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Skills | Hyoil's Portfolio Site</title>
+      </Helmet>
       <MainTitle className="title">Skills & Attributes</MainTitle>
       <Content className="content">
         <Skills className="skills">
