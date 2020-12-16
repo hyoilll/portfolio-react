@@ -12,7 +12,7 @@ const Container = styled("div")`
   margin-bottom: 10px;
   box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 125vh;
+  width: 1200px;
   background-color: white;
   top: 0;
   height: 100px;

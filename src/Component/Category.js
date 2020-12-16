@@ -13,6 +13,8 @@ const Container = styled("div")`
   width: 220px;
 `;
 
+const Items = styled("ul")``;
+
 const Item = styled("li")`
   margin-bottom: 30px;
   :hover {
@@ -24,7 +26,7 @@ const Item = styled("li")`
 const Category = () => {
   return (
     <Container>
-      <ul className="menuItems">
+      <Items className="menuItems">
         <Item className="item" current={window.location.pathname === "/"}>
           <Link to="/">Home</Link>
         </Item>
@@ -43,7 +45,7 @@ const Category = () => {
         >
           <Link to="/Contact">Contact</Link>
         </Item>
-      </ul>
+      </Items>
     </Container>
   );
 };

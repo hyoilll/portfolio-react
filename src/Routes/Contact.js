@@ -4,7 +4,7 @@ import HyoilImg from "../photo/kakao.jpg";
 import Layout from "../layout/Layout";
 
 const Container = styled("div")`
-  margin: 200px 0 0 250px;
+  margin: 200px 0 100px 250px;
   width: 950px;
   height: 100%;
   display: flex;
