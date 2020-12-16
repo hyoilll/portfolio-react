@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { withRouter } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 const Container = styled("div")`
   display: grid;
@@ -11,7 +12,7 @@ const Container = styled("div")`
   margin-bottom: 10px;
   box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 1200px;
+  width: ${(props) => `${props.headerWidth}`};
   background-color: white;
   top: 0;
   height: 100px;
@@ -31,6 +32,16 @@ const Title = styled("h1")`
 `;
 
 const Header = () => {
+  const isPc = useMediaQuery({
+    query: "(min-width: 1024px)",
+  });
+  const isTablet = useMediaQuery({
+    query: "(min-width: 768px) and (max-width:1023px)",
+  });
+  const isMobile = useMediaQuery({
+    query: "(max-width: 767px)",
+  });
+
   let path = window.location.pathname;
   path = path.substring(1, path.length);
 
@@ -39,10 +50,26 @@ const Header = () => {
   }
 
   return (
-    <Container>
-      <Logo href="/">Hyo il</Logo>
-      <Title>{path}</Title>
-    </Container>
+    <>
+      {isPc && (
+        <Container headerWidth={"1200px"}>
+          <Logo href="/">Hyo il</Logo>
+          <Title>{path}</Title>
+        </Container>
+      )}
+      {isTablet && (
+        <Container headerWidth={"768px"}>
+          <Logo href="/">Hyo il</Logo>
+          <Title>{path}</Title>
+        </Container>
+      )}
+      {isMobile && (
+        <Container headerWidth={"767px"}>
+          <Logo href="/">Hyo il</Logo>
+          <Title>{path}</Title>
+        </Container>
+      )}
+    </>
   );
 };
 
