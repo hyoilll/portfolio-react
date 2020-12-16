@@ -5,7 +5,7 @@ import History from "../Component/History";
 import Hanyang from "../photo/hanyang.png";
 import Kia from "../photo/kia.png";
 import Kit from "../photo/kit.png";
-import Helmet from "react-helmet";
+import Layout from "../layout/Layout";
 
 const Container = styled("div")`
   margin: 150px 0 100px 220px;
@@ -68,35 +68,34 @@ const About = () => {
   const [historys, setHistory] = useState(initHistorys);
 
   return (
-    <Container>
-      <Helmet>
-        <title>About | Hyoil's Portfolio Site</title>
-      </Helmet>
-      <Skills>
-        {skills.map((skill, idx) => {
-          return (
-            <Skill
-              key={idx}
-              title={skill.title}
-              skills={skill.skills}
-              icon={skill.icon}
-            ></Skill>
-          );
-        })}
-      </Skills>
-      <Historys>
-        {historys.map((history, idx) => {
-          return (
-            <History
-              key={idx}
-              img={history.img}
-              title={history.title}
-              period={history.period}
-            ></History>
-          );
-        })}
-      </Historys>
-    </Container>
+    <Layout title={"About | Hyoil's Portfolio Site"}>
+      <Container>
+        <Skills>
+          {skills.map((skill, idx) => {
+            return (
+              <Skill
+                key={idx}
+                title={skill.title}
+                skills={skill.skills}
+                icon={skill.icon}
+              ></Skill>
+            );
+          })}
+        </Skills>
+        <Historys>
+          {historys.map((history, idx) => {
+            return (
+              <History
+                key={idx}
+                img={history.img}
+                title={history.title}
+                period={history.period}
+              ></History>
+            );
+          })}
+        </Historys>
+      </Container>
+    </Layout>
   );
 };
 

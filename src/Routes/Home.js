@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProfileImg from "../photo/hyoil.jpg";
-import Helmet from "react-helmet";
+import Layout from "../layout/Layout";
 
 const Container = styled("div")`
   margin: 150px 0 0 220px;
@@ -30,29 +30,28 @@ const Description = styled("p")`
 
 const Home = () => {
   return (
-    <Container>
-      <Helmet>
-        <title>Home | Hyoil's Portfolio Site</title>
-      </Helmet>
-      <Photo src={ProfileImg}></Photo>
-      <Title>
-        初めまして、
-        <br />
-        【イ・ヒョイル】と申します。
-      </Title>
-      <Description>
-        現在Hanyang Cyber univercity3年生になりました。
-        <br />
-        学科はコンピューター工学科に編入し、2021年8月卒業見込みです。
-        <br />
-        今はフロントエンド分野のReact、TypeScriptを勉強しておりますが、
-        <br />
-        Back-end、Mobileまで勉強していきたいと思います。
-      </Description>
-      <Description>
-        アプリケーション開発を目指しております。宜しくお願い致します。
-      </Description>
-    </Container>
+    <Layout title={"Home | Hyoil's Portfolio Site"}>
+      <Container>
+        <Photo src={ProfileImg}></Photo>
+        <Title>
+          初めまして、
+          <br />
+          【イ・ヒョイル】と申します。
+        </Title>
+        <Description>
+          現在Hanyang Cyber univercity3年生になりました。
+          <br />
+          学科はコンピューター工学科に編入し、2021年8月卒業見込みです。
+          <br />
+          今はフロントエンド分野のReact、TypeScriptを勉強しておりますが、
+          <br />
+          Back-end、Mobileまで勉強していきたいと思います。
+        </Description>
+        <Description>
+          アプリケーション開発を目指しております。宜しくお願い致します。
+        </Description>
+      </Container>
+    </Layout>
   );
 };
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SkillBar from "../Component/SkillBar";
 import Ide from "../Component/Ide";
 import Etc from "../Component/Etc";
-import Helmet from "react-helmet";
+import Layout from "../layout/Layout";
 
 const Container = styled("div")`
   margin: 150px 0 0 220px;
@@ -127,51 +127,50 @@ const SKills = () => {
   const [etc, setEtc] = useState(initEtc);
 
   return (
-    <Container>
-      <Helmet>
-        <title>Skills | Hyoil's Portfolio Site</title>
-      </Helmet>
-      <MainTitle className="title">Skills & Attributes</MainTitle>
-      <Content className="content">
-        <Skills className="skills">
-          <SubTitle className="skills__title">Skills</SubTitle>
-          <ul>
-            {skills.map((skill, idx) => {
-              return (
-                <SkillBar
-                  key={idx}
-                  name={skill.name}
-                  per={skill.per}
-                  bar={skill.bar}
-                ></SkillBar>
-              );
-            })}
-          </ul>
-        </Skills>
-        <IdeEtc className="IDE-Etc">
-          <Ides className="IDE">
-            <div>
-              <SubTitle className="IDE__title">IDE</SubTitle>
-              <ul>
-                {ides.map((ide, idx) => {
-                  return <Ide key={idx} name={ide.name}></Ide>;
-                })}
-              </ul>
-            </div>
-          </Ides>
-          <Etcs className="Etc">
-            <div>
-              <SubTitle className="Etc__title">Etc..</SubTitle>
-              <ul>
-                {etc.map((etc, idx) => {
-                  return <Etc key={idx} name={etc.name}></Etc>;
-                })}
-              </ul>
-            </div>
-          </Etcs>
-        </IdeEtc>
-      </Content>
-    </Container>
+    <Layout title={"Skills | Hyoil's Portfolio Site"}>
+      <Container>
+        <MainTitle className="title">Skills & Attributes</MainTitle>
+        <Content className="content">
+          <Skills className="skills">
+            <SubTitle className="skills__title">Skills</SubTitle>
+            <ul>
+              {skills.map((skill, idx) => {
+                return (
+                  <SkillBar
+                    key={idx}
+                    name={skill.name}
+                    per={skill.per}
+                    bar={skill.bar}
+                  ></SkillBar>
+                );
+              })}
+            </ul>
+          </Skills>
+          <IdeEtc className="IDE-Etc">
+            <Ides className="IDE">
+              <div>
+                <SubTitle className="IDE__title">IDE</SubTitle>
+                <ul>
+                  {ides.map((ide, idx) => {
+                    return <Ide key={idx} name={ide.name}></Ide>;
+                  })}
+                </ul>
+              </div>
+            </Ides>
+            <Etcs className="Etc">
+              <div>
+                <SubTitle className="Etc__title">Etc..</SubTitle>
+                <ul>
+                  {etc.map((etc, idx) => {
+                    return <Etc key={idx} name={etc.name}></Etc>;
+                  })}
+                </ul>
+              </div>
+            </Etcs>
+          </IdeEtc>
+        </Content>
+      </Container>
+    </Layout>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import HyoilImg from "../photo/kakao.jpg";
-import Helmet from "react-helmet";
+import Layout from "../layout/Layout";
 
 const Container = styled("div")`
   margin: 200px 0 0 250px;
@@ -57,40 +57,39 @@ const Name = styled("div")`
 
 const Contact = () => {
   return (
-    <Container>
-      <Helmet>
-        <title>Contact | Hyoil's Portfolio Site</title>
-      </Helmet>
-      <Photo src={HyoilImg}></Photo>
-      <Description>
-        <Title className="title">Let's talk</Title>
-        <Mail>
-          <div className="Email">dlgydlf12345@naver.com</div>
-          <div className="Gmail">dlgydlf123@gmail.com</div>
-        </Mail>
-        <Phone className="phoneNumber">+82-10-8218-7111</Phone>
-        <Links>
-          <Link
-            className="github"
-            href="https://github.com/hyoilll"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ marginRight: "30px" }}
-          >
-            <Icon className="fab fa-github"></Icon>
-          </Link>
-          <Link
-            className="blog"
-            href="https://blog.naver.com/dlgydlf12345"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon className="fab fa-blogger-b"></Icon>
-          </Link>
-        </Links>
-        <Name className="version">- 2020 Lee Hyoil -</Name>
-      </Description>
-    </Container>
+    <Layout title={"Contact | Hyoil's Portfolio Site"}>
+      <Container>
+        <Photo src={HyoilImg}></Photo>
+        <Description>
+          <Title className="title">Let's talk</Title>
+          <Mail>
+            <div className="Email">dlgydlf12345@naver.com</div>
+            <div className="Gmail">dlgydlf123@gmail.com</div>
+          </Mail>
+          <Phone className="phoneNumber">+82-10-8218-7111</Phone>
+          <Links>
+            <Link
+              className="github"
+              href="https://github.com/hyoilll"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginRight: "30px" }}
+            >
+              <Icon className="fab fa-github"></Icon>
+            </Link>
+            <Link
+              className="blog"
+              href="https://blog.naver.com/dlgydlf12345"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon className="fab fa-blogger-b"></Icon>
+            </Link>
+          </Links>
+          <Name className="version">- 2020 Lee Hyoil -</Name>
+        </Description>
+      </Container>
+    </Layout>
   );
 };
 

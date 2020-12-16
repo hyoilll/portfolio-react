@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Project from "../Component/Project";
-import Helmet from "react-helmet";
+import Layout from "../layout/Layout";
 
 const Container = styled("div")`
   margin: 150px 0 100px 220px;
@@ -100,59 +100,58 @@ const MyWork = () => {
   const [htmlCssProjects, setHC] = useState(initHtmlCssP);
 
   return (
-    <Container>
-      <Helmet>
-        <title>My Work | Hyoil's Portfolio Site</title>
-      </Helmet>
-      <Title>Projects</Title>
-      <Content>
-        <Items className="react">
-          <SubTitle>✔ React Projects</SubTitle>
-          <span>with Html, Css, JavaScript (library.React)</span>
-          {reactProjects.map((react, idx) => {
-            return (
-              <Project
-                key={idx}
-                name={react.name}
-                description={react.description}
-                idx={idx}
-                github={react.github}
-              ></Project>
-            );
-          })}
-        </Items>
-        <Items className="js">
-          <SubTitle>✔ Vanilla Js Projects</SubTitle>
-          <span>with Html, Css, Vanilla JavaScript</span>
-          {jsProjects.map((js, idx) => {
-            return (
-              <Project
-                key={idx}
-                name={js.name}
-                description={js.description}
-                idx={idx}
-                github={js.github}
-              ></Project>
-            );
-          })}
-        </Items>
-        <Items className="html-css">
-          <SubTitle>✔ Html & Css Projects</SubTitle>
-          <span>with Html, Css</span>
-          {htmlCssProjects.map((hc, idx) => {
-            return (
-              <Project
-                key={idx}
-                name={hc.name}
-                description={hc.description}
-                idx={idx}
-                github={hc.github}
-              ></Project>
-            );
-          })}
-        </Items>
-      </Content>
-    </Container>
+    <Layout title={"My Work | Hyoil's Portfolio Site"}>
+      <Container>
+        <Title>Projects</Title>
+        <Content>
+          <Items className="react">
+            <SubTitle>✔ React Projects</SubTitle>
+            <span>with Html, Css, JavaScript (library.React)</span>
+            {reactProjects.map((react, idx) => {
+              return (
+                <Project
+                  key={idx}
+                  name={react.name}
+                  description={react.description}
+                  idx={idx}
+                  github={react.github}
+                ></Project>
+              );
+            })}
+          </Items>
+          <Items className="js">
+            <SubTitle>✔ Vanilla Js Projects</SubTitle>
+            <span>with Html, Css, Vanilla JavaScript</span>
+            {jsProjects.map((js, idx) => {
+              return (
+                <Project
+                  key={idx}
+                  name={js.name}
+                  description={js.description}
+                  idx={idx}
+                  github={js.github}
+                ></Project>
+              );
+            })}
+          </Items>
+          <Items className="html-css">
+            <SubTitle>✔ Html & Css Projects</SubTitle>
+            <span>with Html, Css</span>
+            {htmlCssProjects.map((hc, idx) => {
+              return (
+                <Project
+                  key={idx}
+                  name={hc.name}
+                  description={hc.description}
+                  idx={idx}
+                  github={hc.github}
+                ></Project>
+              );
+            })}
+          </Items>
+        </Content>
+      </Container>
+    </Layout>
   );
 };
 
