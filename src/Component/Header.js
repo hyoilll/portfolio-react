@@ -12,7 +12,7 @@ const Container = styled("div")`
   margin-bottom: 10px;
   box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: ${(props) => `${props.headerWidth}`};
+  width: 125vh;
   background-color: white;
   top: 0;
   height: 100px;
@@ -51,24 +51,10 @@ const Header = () => {
 
   return (
     <>
-      {isPc && (
-        <Container headerWidth={"1200px"}>
-          <Logo href="/">Hyo il</Logo>
-          <Title>{path}</Title>
-        </Container>
-      )}
-      {isTablet && (
-        <Container headerWidth={"768px"}>
-          <Logo href="/">Hyo il</Logo>
-          <Title>{path}</Title>
-        </Container>
-      )}
-      {isMobile && (
-        <Container headerWidth={"767px"}>
-          <Logo href="/">Hyo il</Logo>
-          <Title>{path}</Title>
-        </Container>
-      )}
+      <Container>
+        <Logo href="/">Hyo il</Logo>
+        <Title>{path}</Title>
+      </Container>
     </>
   );
 };
