@@ -10,7 +10,7 @@ import Layout from "../layout/Layout";
 const Container = styled("div")`
   margin: 150px 0 100px 220px;
   width: 950px;
-  height: 100%;
+  height: 1500px;
 `;
 
 const Skills = styled("div")`

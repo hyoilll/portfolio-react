@@ -1,14 +1,17 @@
 import React from "react";
 import Helmet from "react-helmet";
+import styled from "styled-components";
+
+const Container = styled("div")``;
 
 const Layout = ({ children, title }) => {
   return (
-    <div>
+    <Container>
       <Helmet>
         <title>{title}</title>
       </Helmet>
       {children}
-    </div>
+    </Container>
   );
 };
 

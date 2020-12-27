@@ -6,7 +6,7 @@ import MyRouter from "./MyRouter";
 
 const Main = styled("div")`
   width: 1200px;
-  height: 1000px;
+  height: 800px;
   /* display: flex;
   justify-content: center; */
   margin: 0 auto;
