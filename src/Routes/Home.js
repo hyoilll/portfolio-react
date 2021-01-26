@@ -41,7 +41,7 @@ const Home = () => {
         <Description>
           現在Hanyang Cyber univercity3年生になりました。
           <br />
-          学科はコンピューター工学科に編入し、2021年8月卒業見込みです。
+          学科はコンピューター工学科に編入し、2022年2月卒業見込みです。
           <br />
           今はフロントエンド分野のReact、TypeScriptを勉強しておりますが、
           <br />
