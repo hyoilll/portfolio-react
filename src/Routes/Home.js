@@ -39,7 +39,7 @@ const Home = () => {
           【イ・ヒョイル】と申します。
         </Title>
         <Description>
-          現在Hanyang Cyber univercity3年生になりました。
+          現在Hanyang Cyber univercity4年生になりました。
           <br />
           学科はコンピューター工学科に編入し、2022年2月卒業見込みです。
           <br />
