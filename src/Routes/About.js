@@ -46,7 +46,7 @@ const initHistorys = () => {
   historys.push({
     img: Hanyang,
     title: "漢陽─大学校　コンピューター工学科、Hanyang Cyber univercity",
-    period: "2020年3月 ~ 2021年8月の卒業見込み",
+    period: "2020年3月 ~ 2022年2月の卒業見込み",
   });
   historys.push({
     img: Kia,
