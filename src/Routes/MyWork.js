@@ -60,12 +60,6 @@ const initJsP = () => {
     github: "https://github.com/hyoilll/Portfolio-web-site",
   });
   jss.push({
-    name: "Todo List",
-    description:
-      "毎日のすべきことを記録しておいて、計画的に過ごすことができるサイトです。",
-    github: "https://github.com/hyoilll/javascript2",
-  });
-  jss.push({
     name: "Web Game",
     description:
       "Webで楽しめるゲーム（MinesweeperやTicTecTocやCard Matchingなど）を作ってみました。",
@@ -130,21 +124,6 @@ const MyWork = () => {
                   description={js.description}
                   idx={idx}
                   github={js.github}
-                ></Project>
-              );
-            })}
-          </Items>
-          <Items className="html-css">
-            <SubTitle>✔ Html & Css Projects</SubTitle>
-            <span>with Html, Css</span>
-            {htmlCssProjects.map((hc, idx) => {
-              return (
-                <Project
-                  key={idx}
-                  name={hc.name}
-                  description={hc.description}
-                  idx={idx}
-                  github={hc.github}
                 ></Project>
               );
             })}
